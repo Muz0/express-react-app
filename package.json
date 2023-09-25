@@ -1,0 +1,43 @@
+{
+  "name": "express-react-app",
+  "version": "1.0.0",
+  "description": "Full stack App with PostqreSQL, React + Express",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && nodemon server.js", 
+    "client": "cd client && npm start", 
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muz0/express-react-app.git"
+  },
+  "keywords": [
+    "React",
+    "TypeScript",
+    "NodeJS",
+    "Express",
+    "PostgreSQL"
+  ],
+  "author": "Muz0",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Muz0/express-react-app/issues"
+  },
+  "homepage": "https://github.com/Muz0/express-react-app#readme",
+  "dependencies": {
+    "lint": "^0.8.19"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "concurrently": "^8.2.1",
+    "eslint": "^8.50.0",
+    "eslint-plugin-react": "^7.33.2"
+  }
+}
